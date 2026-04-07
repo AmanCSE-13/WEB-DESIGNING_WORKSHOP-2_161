@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Calculator</title>
+</head>
+<body>
+    <h2>Simple Calculator</h2>
+    <label>Enter First Number:</label>
+    <input type="number" id="num1"><br> 
+    <label>Enter Second Number:</label>
+    <input type="number" id="num2"><br>
+    <button onclick="calculate()">Calculate</button>
+    <h3>Results:</h3>
+    <p id="sum"></p>
+    <p id="difference"></p>
+    <p id="product"></p>
+    <script>
+        function calculate() {
+            let n1 = parseFloat(document.getElementById("num1").value);
+            let n2 = parseFloat(document.getElementById("num2").value);
+            let sum = n1 + n2;
+            let difference = n1 - n2;
+            let product = n1 * n2;
+            document.getElementById("sum").innerHTML = "Sum: " + sum;
+            document.getElementById("difference").innerHTML = "Difference: " + difference;
+            document.getElementById("product").innerHTML = "Product: " + product;
+        }
+    </script>
+
+</body>
+</html>
