@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>getElementById Example</title>
+<style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 50px;
+            font-size: 60px;
+            color: rgb(214, 118, 208);
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Welcome CSE 16!</h1>
+    <button onclick="changeText()"> Click Me </button>
+    <script>
+        function changeText() {
+            let heading = document.getElementById("title");
+            heading.innerText = "Hello Students , Welcome to JS! 👋";
+            heading.style.color = "pink";
+            heading.style.fontSize = "100px";
+        }
+    </script>
+</body>
+</html>
